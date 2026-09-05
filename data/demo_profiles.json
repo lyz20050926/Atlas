@@ -1,0 +1,25 @@
+[
+  {
+    "name": "EEE student exploring embodied intelligence",
+    "profile": {
+      "user_id": "demo-eee",
+      "education_level": "undergraduate",
+      "major": "Electrical and Electronic Engineering",
+      "background_knowledge": ["Python", "Machine Learning", "Basic control theory"],
+      "interests": ["Robotics", "Cognitive Science", "Ethics"],
+      "language_preferences": ["English"],
+      "reading_preferences": ["theory and application"],
+      "completed_books": []
+    },
+    "goal": {
+      "topic": "Embodied Intelligence",
+      "purpose": "Build an interdisciplinary foundation",
+      "duration_weeks": 6,
+      "hours_per_week": 4,
+      "required_perspectives": ["Robotics", "Cognitive Science", "Ethics"],
+      "preferred_difficulty": "intermediate",
+      "desired_balance": "theory and application"
+    }
+  }
+]
+

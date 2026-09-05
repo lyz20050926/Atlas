@@ -1,0 +1,461 @@
+{
+  "format": 1,
+  "project": "NexMind Atlas",
+  "generated_at": "2026-09-05T10:10:34.397124+00:00",
+  "source_sha256": "937e2693ed965e2f8c259d4d59d6ac3bd00dbae2844442cec2a032d5a529f049",
+  "scope": "Code project only. Presentation deck and video are separate deliverables.",
+  "files": {
+    ".env.example": {
+      "bytes": 919,
+      "sha256": "13af241448508775a24f3a5d8adc8c21c527515eee3230956792e6a0cc44b5cb"
+    },
+    ".gitignore": {
+      "bytes": 180,
+      "sha256": "9473b346f907c25bbde8b2b86d20904cbf4b715c35f8013bf02e1b0e5f8ae4a4"
+    },
+    ".streamlit/config.toml": {
+      "bytes": 224,
+      "sha256": "fcc4a3cab3784d116e317bce0213039917341e13c4dc7b6f29aa5f0bd69094a2"
+    },
+    "README.md": {
+      "bytes": 10023,
+      "sha256": "9d4fcf56b1f9d8b8ddd41ef23787f44859459e5fc0cf0a44ca6c0b3caa25d5cf"
+    },
+    "app.py": {
+      "bytes": 182070,
+      "sha256": "e76b62780c741bd919f46c9a97a7fafb7136b2c0c198608ec278fad7b6484835"
+    },
+    "assets/atlas-mark.svg": {
+      "bytes": 488,
+      "sha256": "14434d5eaf3525aaa5ccd479d0dd8d9c8c29627084e57e6c31dc421b3e79cd4e"
+    },
+    "assets/nexmind-logo-original.png": {
+      "bytes": 1189541,
+      "sha256": "703fe9c7e7d840bf3f9bff7eaeea073b2b3fcdf90345c76aec5650f8eed94c87"
+    },
+    "assets/nexmind-mark.svg": {
+      "bytes": 910,
+      "sha256": "2f9ae8845e734322cc894905194878bafa9d03d2d228b87cea7ac9341b5d21f0"
+    },
+    "data/demo_profiles.json": {
+      "bytes": 845,
+      "sha256": "df30f22ce3994e40fca526fc638c16e33aa18cea9543513d6ed94d1d53370f24"
+    },
+    "data/evaluation_cases.json": {
+      "bytes": 2261,
+      "sha256": "198822d1cfc5f6e70d38a65218e75fa0c8b6c96153b59ee9b11bb43c6250a98f"
+    },
+    "data/fixtures/book_api_responses.json": {
+      "bytes": 1852,
+      "sha256": "f006fb009c7a6a7f70ff48174f6ab05ffb972d19b21e881bdd9b4395c4150784"
+    },
+    "data/fixtures/chinese_books.json": {
+      "bytes": 3501,
+      "sha256": "35c6a0d9d5c6c980c46556ca1e9cf9261a296d00c0185f8cdf5d80a912646b81"
+    },
+    "data/fixtures/evaluation_books.json": {
+      "bytes": 6461,
+      "sha256": "591d1616b5189305b819af3c27b355b46381e8b4ea52e4e2a4cc1c550bca951b"
+    },
+    "data/fixtures/google_books_response.json": {
+      "bytes": 609,
+      "sha256": "7ae33310bc0b0c07777c8f6617c7569b744ea2036761ad8c60f0b361a2427ac6"
+    },
+    "docs/SUBMISSION_GUIDE.md": {
+      "bytes": 6850,
+      "sha256": "1520cecba1a8d97104c617b7f9dbf17ef002b7370ddef5e4bdd4cbdc54ac52df"
+    },
+    "docs/architecture.md": {
+      "bytes": 4782,
+      "sha256": "6674f8355e9d36bcd1e108b12b01f4ccc3a1f93776b9d1b269c2c896553766e9"
+    },
+    "docs/deck_outline.md": {
+      "bytes": 1741,
+      "sha256": "d05b16580ffbe296b2c17663ea8b41603938547906d2a992d30e43e0165caba3"
+    },
+    "docs/demo_script.md": {
+      "bytes": 3336,
+      "sha256": "1ee3b92b6630f55a384990cfe681a050a90f1bed3a29f0459ea584d752d77759"
+    },
+    "docs/evaluation.md": {
+      "bytes": 4137,
+      "sha256": "212f32914b056786844813a79a183e717e4bbf8a20bbb4adcad6c7073a8c392f"
+    },
+    "docs/hackathon_readiness.md": {
+      "bytes": 3888,
+      "sha256": "4e3377721dad0ee20bb478ebc8eaf72cb735f023dea8275f17085d0a33cbaeb0"
+    },
+    "docs/human_evaluation_protocol.md": {
+      "bytes": 1645,
+      "sha256": "f04f7aa5ef3cead1c5a7a1f521d1f257a19009fca90e94ebdbf8c9940239d6e5"
+    },
+    "docs/qa-learning-focus-mixed-practice-2026-09-05.md": {
+      "bytes": 3925,
+      "sha256": "ca200556c6efdfd90f806967b448af2c935295574e43f6ebf8cc387a986ac694"
+    },
+    "docs/topic4_alignment.md": {
+      "bytes": 4069,
+      "sha256": "3fb32e1509f545648da7ed84d76fa309060c09d3227cd3f89f8e7e69992b9709"
+    },
+    "evaluation_results/latest.json": {
+      "bytes": 8520,
+      "sha256": "aff722ff35f4652afe8f267ddafc70f4abeb468d0ceb8aa0825de26b897ab204"
+    },
+    "evaluation_results/live_latest.json": {
+      "bytes": 4631,
+      "sha256": "979a802324c7208ce8a543bed78690e68e6e9d6983ef2eb2bdf19d8071a3adfd"
+    },
+    "evaluation_results/preflight_latest.json": {
+      "bytes": 2889,
+      "sha256": "d55d2729ede0a4b613700667685183be69c005370d603a42f15fe4f1769f1fb1"
+    },
+    "launch.py": {
+      "bytes": 10358,
+      "sha256": "f0455ba858428812a0f9ec691b6d89c70916ea5abab8621fc8999495c9b7a42b"
+    },
+    "pyproject.toml": {
+      "bytes": 747,
+      "sha256": "c507975d60d53d4ca15c93e4ba6dae154472adfe8cdc8a70a7033b5a16288423"
+    },
+    "requirements-dev.txt": {
+      "bytes": 238,
+      "sha256": "1e1e68996e7dbb04c6cfbfebd4d4c90fa52e70d5c27be6ca291840dcb0cbca40"
+    },
+    "requirements.txt": {
+      "bytes": 1587,
+      "sha256": "62e7079e2592c48bf22df92f364f7b92107eb74b7c256b775cb51303a42e2946"
+    },
+    "scripts/build_submission.py": {
+      "bytes": 10381,
+      "sha256": "c603a8ca5d892d88f6ac0261f7ced1b26bf190ff2246697c88ed4ecb534b4838"
+    },
+    "scripts/check_aws.py": {
+      "bytes": 3983,
+      "sha256": "10f892cf77ae4062c5d9fc530caf9c1260c2846f611fd934efbc4f06ca24b116"
+    },
+    "scripts/check_bedrock_connection.py": {
+      "bytes": 843,
+      "sha256": "2206b902d940e8a135820ea87b2e0d3eb15677f98a10bf5b0315bc42493927d1"
+    },
+    "scripts/check_dependencies.py": {
+      "bytes": 2400,
+      "sha256": "aaa2d0b6100b45ef3a6c7fe1d0d77f163a30b05c469eca72e95cd29f4a890ddd"
+    },
+    "scripts/check_google_books.py": {
+      "bytes": 1552,
+      "sha256": "0ffbb31f9b062629c12cf5f889c86f14cf3efa351d6ed78441d14e9512587e14"
+    },
+    "scripts/preflight.py": {
+      "bytes": 4498,
+      "sha256": "78d81bd7c1a01974e50f317833396152266ae2a3290ae5a31acf872c878aa47b"
+    },
+    "scripts/run_demo.py": {
+      "bytes": 1399,
+      "sha256": "9e650e0e28129994843e5ae01c7bb4db0fc2e74570859a66c1975eb1735bed9f"
+    },
+    "scripts/run_evaluation.py": {
+      "bytes": 9620,
+      "sha256": "fe0b5bd8641eaa4498509a9b33a7428fd145ddb1b8443cf98d8c5ec0ee883d1a"
+    },
+    "scripts/run_live_evaluation.py": {
+      "bytes": 9468,
+      "sha256": "931d24d9d0d6dcd8a1aa8c3588d7728bbb8617b07e79033c84491738312c56cf"
+    },
+    "src/__init__.py": {
+      "bytes": 42,
+      "sha256": "76d64c36b2d8da39a2126ae4a63a2729010d11facf3eb70412994d6f0c5e7465"
+    },
+    "src/book_search.py": {
+      "bytes": 18699,
+      "sha256": "ad997cd5b5b28c47d06b4ef5552ea526b1f36474fbf11bd4e446b002aedc6fbf"
+    },
+    "src/config.py": {
+      "bytes": 1558,
+      "sha256": "4a00a84877b5c4169db94b2631d8f8caa95fbbacda50a71428e749b5d770080a"
+    },
+    "src/database.py": {
+      "bytes": 28031,
+      "sha256": "d4ba0391d39923adcf2c028467481f150de1046f7eb6f7edf0df855ecb2052e9"
+    },
+    "src/diagnostic.py": {
+      "bytes": 20758,
+      "sha256": "f06284c961b6af5b0344e571da2424c52c2de7b7e8f54d37acbdb553099b6586"
+    },
+    "src/graph.py": {
+      "bytes": 12635,
+      "sha256": "e4dd1ae785ec08f9984ebd167ae55ca106138c49a51ba08b195eacfc1cef76dc"
+    },
+    "src/hero_book.py": {
+      "bytes": 19141,
+      "sha256": "f195a6cf589749c773ca1f2d5306bba8db73d6b20430faba79b6cae5bb5fdeb4"
+    },
+    "src/journey_actions.py": {
+      "bytes": 7427,
+      "sha256": "5f71e2e9dee54a47e09706df22f1aad2bdb36c668ce8756047a14285a07a5c7b"
+    },
+    "src/language.py": {
+      "bytes": 7344,
+      "sha256": "316e9e247cab99355d4364e3952cf8a00a68c2fc3c818404888888715c9d409a"
+    },
+    "src/learning_review.py": {
+      "bytes": 40055,
+      "sha256": "eb3b3f32ff08b58f24d9f50e18138d4a03039e5459012217bee1d23262ff110b"
+    },
+    "src/llm/__init__.py": {
+      "bytes": 34,
+      "sha256": "7a4b547d1b60b77d4407cb85b40be4040565714e3d38d52f344b8e7185514aa0"
+    },
+    "src/llm/base.py": {
+      "bytes": 379,
+      "sha256": "b0c435e65541c3c8e2147fc81ef97f7dba0503e6e0fbb7e2bee5fb0277173413"
+    },
+    "src/llm/bedrock_provider.py": {
+      "bytes": 8614,
+      "sha256": "3cc9f2bf77d58a736cfb0243bb17f37763eb0b37080639a97c2181dd762bdbac"
+    },
+    "src/llm/factory.py": {
+      "bytes": 1444,
+      "sha256": "47b82ee7aec4f0cd6c9be0d1fd2da1c5696ef6a9e6a991af4d21f8707c7a7dcb"
+    },
+    "src/llm/mock_provider.py": {
+      "bytes": 416,
+      "sha256": "fbcaa095bd5b38faef8540a891091328d335a7dd0fadcb1e028deb283961b9f9"
+    },
+    "src/mentor.py": {
+      "bytes": 26530,
+      "sha256": "9bd7fcc6b1ac81f3e2602961bf1f1dbec18c8f573bbd76869b9decef7f2832dc"
+    },
+    "src/models.py": {
+      "bytes": 10622,
+      "sha256": "6df5416ded0bcc8ef5899b91ca72bb853d783954e09434bc50cd1695a4ec49b5"
+    },
+    "src/plan_history.py": {
+      "bytes": 14112,
+      "sha256": "ec009089e041262a76997bfe2c2a32c9a7865ef62b32e707bb64f759d6fac459"
+    },
+    "src/profile_navigation.py": {
+      "bytes": 920,
+      "sha256": "0c41860246cd0a02a0ab630cc54d2ceb8a2eb901db93549a351b41e2eb6d2ec0"
+    },
+    "src/purchase_links.py": {
+      "bytes": 1289,
+      "sha256": "2cbfe393bd64cd032d8592b6e71f27b23035b4d8c3d2e41675e5ba0d971ccd27"
+    },
+    "src/quiz_ui.py": {
+      "bytes": 4897,
+      "sha256": "c33ca993a82c076e659d0b100a900f33e6fb11ce664882a87a3547b24f2d2c0e"
+    },
+    "src/reading_support.py": {
+      "bytes": 6419,
+      "sha256": "386faca8dd74b6681046cfa8a591849927b4e15b39525be9732b071dddfc03e2"
+    },
+    "src/replanning.py": {
+      "bytes": 6918,
+      "sha256": "4030af81e75436be6400437fefce9237514624397541d8f5ceaa61d580ca0f45"
+    },
+    "src/services/__init__.py": {
+      "bytes": 59,
+      "sha256": "ddd9b43b174ff69fc46c2c7c68e8b233181853f2f4aa2910cde13ff0530b08c9"
+    },
+    "src/services/book_matching.py": {
+      "bytes": 3988,
+      "sha256": "534dbe6a0b4a7ca88c00e55c03c5f178cfaa485f03a050389c635cad825ea0fd"
+    },
+    "src/services/goal_alignment.py": {
+      "bytes": 7943,
+      "sha256": "c9ff46c94cb6690596dc064cb2936e9ccd40543dbce40349834d60db183dd08a"
+    },
+    "src/services/learning_focus.py": {
+      "bytes": 3747,
+      "sha256": "4ec7c50e4538b10168ec7e7735a4cf4b92edf21be5ac28f2c5c95fb65e4a9789"
+    },
+    "src/services/recommendation.py": {
+      "bytes": 30169,
+      "sha256": "82aba22b16cffa9098ef654bac8af8bc9ec2b802f96adaaa525bafa09f6469d2"
+    },
+    "src/services/scoring.py": {
+      "bytes": 23851,
+      "sha256": "a01fa18a2233f40eea466c34253f3ff2fee9b9517d9f8c2c03fbae8646939e42"
+    },
+    "src/services/time_estimation.py": {
+      "bytes": 335,
+      "sha256": "75d722fc71088ece7bb5441abd15fbb9e73a1f3a1e310327e9cb6b78b8bba32d"
+    },
+    "src/state.py": {
+      "bytes": 884,
+      "sha256": "8d83a3548f91e7e7a6b1c6c4e980fbfb019de81553c0f66d1cb1f921bbaca69c"
+    },
+    "src/tools/__init__.py": {
+      "bytes": 34,
+      "sha256": "f6ea2713ed79d424bd72f77bd26e37a7069e833514cab23edb0b540b794eeec9"
+    },
+    "src/tools/google_books.py": {
+      "bytes": 4448,
+      "sha256": "2d474f2c8a876bcbc20cd9825e6416e60434c6f05e8ec0bafbf0ef7e2c250ac1"
+    },
+    "src/tools/open_library.py": {
+      "bytes": 4525,
+      "sha256": "0b35266e2d8d06e733ef6ce5b8650d5765a977402b6630f3b6c8eb206952269d"
+    },
+    "src/ui.py": {
+      "bytes": 195489,
+      "sha256": "85c231f3280fcc141fbca819584129456aceaa7f35a659b3c4dfe1faa2de2aa4"
+    },
+    "start.ps1": {
+      "bytes": 1015,
+      "sha256": "e600a5e30c5c2e221843d20f65556da10e7f4a7d4fb60c5160561dc6b485ee91"
+    },
+    "start.sh": {
+      "bytes": 512,
+      "sha256": "7373f8075fbd9a3a6c3686b10b55732d3efcfe21a5f5fd8e25be59df7fee8001"
+    },
+    "static/nexmind-logo.png": {
+      "bytes": 1189541,
+      "sha256": "703fe9c7e7d840bf3f9bff7eaeea073b2b3fcdf90345c76aec5650f8eed94c87"
+    },
+    "tests/integration/test_database.py": {
+      "bytes": 11030,
+      "sha256": "9d899cec317d57bba20799546711b0d83addfdc167d6dc679e2337568b606f76"
+    },
+    "tests/integration/test_graph.py": {
+      "bytes": 5780,
+      "sha256": "35c0eb044e800ce0170a7ea832cdd3b96982de7757e0e4f4bfd416cbd2f005d0"
+    },
+    "tests/integration/test_learning_focus_form.py": {
+      "bytes": 4725,
+      "sha256": "e0d1f4a0fadd366f8f477e675f212ab6b89f50df7066ffb5222cd65f621b6635"
+    },
+    "tests/integration/test_mixed_quiz_ui.py": {
+      "bytes": 5284,
+      "sha256": "2a9a5d25846f89ac285e82dbff5827f8104321899d08c8b4677383f1cc94dbdd"
+    },
+    "tests/integration/test_plan_history.py": {
+      "bytes": 8877,
+      "sha256": "0d7b5cb19ee2407f41f9280e3b94ee4300971de40f59055cbf781a3aa56be8cd"
+    },
+    "tests/integration/test_profile_creation.py": {
+      "bytes": 3481,
+      "sha256": "4d0574bf5a581f411166e00da39524314f6332ea617e3262d5f4923886ed54b3"
+    },
+    "tests/integration/test_profile_switch.py": {
+      "bytes": 7734,
+      "sha256": "5970db21341e1fd3d9b9e60cfb85fc7415d0025127ed4165551cd8933d19bccb"
+    },
+    "tests/integration/test_submission_demo.py": {
+      "bytes": 4164,
+      "sha256": "64b04338e3977ddc87dfb539628d92098a9a0069bc06b59158df73a5a4af5b5a"
+    },
+    "tests/unit/test_adaptation.py": {
+      "bytes": 4033,
+      "sha256": "bcd3309e349e58260ad994edd880ff7e710d3c45f3cd4edeb0771065e9284c56"
+    },
+    "tests/unit/test_bedrock_provider.py": {
+      "bytes": 4017,
+      "sha256": "a6652324157760244e5adf4a5034ccd2a95d8e164b8a2123252e615a4bf16e93"
+    },
+    "tests/unit/test_book_search.py": {
+      "bytes": 6937,
+      "sha256": "5a62d134f6ee02ccc7bcf5e637f12f7d7358d603021eb1eac71957e65ee8e64e"
+    },
+    "tests/unit/test_book_search_identity.py": {
+      "bytes": 11798,
+      "sha256": "0815380dd8df8f5a0e05759037a03e12d01cde61f61e114938fb5c62251adc22"
+    },
+    "tests/unit/test_diagnostic.py": {
+      "bytes": 4350,
+      "sha256": "35b097f026bcea63b65b89508884cac523714318e90c43c5ae12045ed223731b"
+    },
+    "tests/unit/test_evaluation_gate.py": {
+      "bytes": 646,
+      "sha256": "96223898339f38ea92fcc546b14de2e546d9f147055504e07c12a35a293ed0fa"
+    },
+    "tests/unit/test_goal_alignment.py": {
+      "bytes": 3492,
+      "sha256": "502f5b29366d0bdf78cb5e4644c23746e1aabc1ee592be6cc3cdb33c7f380114"
+    },
+    "tests/unit/test_hero_book.py": {
+      "bytes": 4822,
+      "sha256": "c826e4af56048c97f3873b4e3b2b12256eb57491a3125b5aa4a0fa34cd0a6a6b"
+    },
+    "tests/unit/test_journey_actions.py": {
+      "bytes": 5253,
+      "sha256": "0a294abfaf466ead968d0e49fa2f96ff7ecb9ed061685a67084fce9f0efe2add"
+    },
+    "tests/unit/test_language_support.py": {
+      "bytes": 7357,
+      "sha256": "7bde987def25b1b91723398f303013a72715acc59c651f2bd32bb49e68923bb3"
+    },
+    "tests/unit/test_launch.py": {
+      "bytes": 6806,
+      "sha256": "e25ef4a2ae451a1c24f8991504df42d7657592c24041118208690c27f23a60f5"
+    },
+    "tests/unit/test_learning_focus.py": {
+      "bytes": 7889,
+      "sha256": "d61595d5f9ebd9f8a8b893a75866c8965c2d2b978a7b400d4541678e84d84eec"
+    },
+    "tests/unit/test_learning_review.py": {
+      "bytes": 7226,
+      "sha256": "5ce4a3c2d93a88ae7dbfebbff425a7c4a2a771a6558e3a9878be61c0088ac079"
+    },
+    "tests/unit/test_llm_factory.py": {
+      "bytes": 1783,
+      "sha256": "90fe0283f04436e1033acf9e16b03f2eaa3ecec9f80d2253b6f1683543e798fc"
+    },
+    "tests/unit/test_mentor.py": {
+      "bytes": 10567,
+      "sha256": "22889a53655bd265e301dc1b8078c2254ed2925195344f05f7c17b8c3a496d96"
+    },
+    "tests/unit/test_mixed_diagnostic.py": {
+      "bytes": 19634,
+      "sha256": "da498b4fa4a382f54da472f88bdb3d5e55be9100b23c8b31d7ca2d72bff68081"
+    },
+    "tests/unit/test_models.py": {
+      "bytes": 869,
+      "sha256": "207175ead867b9b86b628ea68e91d663af1f48bcc14ad05b3347d301d2cb548e"
+    },
+    "tests/unit/test_normalization.py": {
+      "bytes": 3982,
+      "sha256": "14e25649baba0e2118c5a163e39b2a69034b91e3f6ccaceafc2175f315922a2a"
+    },
+    "tests/unit/test_profile_navigation.py": {
+      "bytes": 7497,
+      "sha256": "0e875c1c5cc3e7946d6cda7e5ad796733a57c37c4d0e5191052d75644f78b3e3"
+    },
+    "tests/unit/test_purchase_links.py": {
+      "bytes": 1009,
+      "sha256": "350cbf9a75d67a0b15e74ade11956196fce12f67ed9163858680e2130ff99a1d"
+    },
+    "tests/unit/test_quiz_state.py": {
+      "bytes": 4601,
+      "sha256": "74b3e0725976c972820b37b96b9124bf7d901fd7948e749a0f91199d5d37056b"
+    },
+    "tests/unit/test_reading_support.py": {
+      "bytes": 2256,
+      "sha256": "ba1589ee9e57643de43375e42332f1cfa438a6c784286888853439da3bd14914"
+    },
+    "tests/unit/test_retrieval_telemetry.py": {
+      "bytes": 670,
+      "sha256": "84c9095b604bc5836b086046faaad00f16b22fe46a763b7ca405af72a8e795fe"
+    },
+    "tests/unit/test_scoring.py": {
+      "bytes": 7214,
+      "sha256": "32fe296516b4ecd9bdca2c89978d40e6687e11d5d0a12421b9b54e14778c1e21"
+    },
+    "tests/unit/test_scoring_release.py": {
+      "bytes": 4712,
+      "sha256": "9f0ec57109383267458e98536253f4c7b5f4e35e9588a3033bf648def0ad022a"
+    },
+    "tests/unit/test_submission_archive.py": {
+      "bytes": 9381,
+      "sha256": "43f5c2767363986ca529d6c20374e38d883a50a0da8760279d013218d33d4ba7"
+    },
+    "tests/unit/test_ui.py": {
+      "bytes": 33249,
+      "sha256": "94188f6a3718817fcc69f1e1cfb9b7e5a44edfe9926f4981e9ffb18906700885"
+    },
+    "uv.lock": {
+      "bytes": 480884,
+      "sha256": "e8c6396b3b1a3fdc98fcaee3c8387168dbc184a459ead4c9f69fcc965859d400"
+    }
+  }
+}

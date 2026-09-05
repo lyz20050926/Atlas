@@ -1,0 +1,146 @@
+{
+  "generated_at": "2026-09-04T11:21:33.947365+00:00",
+  "mode": "billable source-tool and Amazon Bedrock smoke test; catalogue operations may use the labelled 24-hour cache",
+  "model_id": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "case_count": 2,
+  "elapsed_seconds": 39.603,
+  "bedrock_usage": {
+    "calls": 2,
+    "input_tokens": 3960,
+    "output_tokens": 3324,
+    "cache_read_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "structured_requests": 2,
+    "structured_first_attempt_successes": 2,
+    "structured_validation_retries": 0,
+    "schema_validation_first_attempt_rate": 1.0
+  },
+  "all_constraints_satisfied": true,
+  "all_selected_books_pass_relevance_gate": true,
+  "topic4_digital_agent_metrics": {
+    "schema_validation_first_attempt_rate": 1.0,
+    "tool_call_success_rate": 0.75,
+    "task_completion_rate": 1.0,
+    "token_cost_per_run": {
+      "average_metered_tokens": 3642.0,
+      "estimated_usd": null,
+      "note": "Apply the current account/model pricing or AWS billing export; no stale price is hard-coded."
+    },
+    "loop_discipline": {
+      "average_search_iterations": 1.0,
+      "iteration_cap": 3,
+      "cap_hit_rate": 0.0
+    },
+    "answer_fidelity_proxy": 1.0,
+    "answer_fidelity_human_review_status": "pending"
+  },
+  "cases": [
+    {
+      "id": "live-en-embodied",
+      "language": "en",
+      "latency_seconds": 21.275,
+      "data_mode": "live",
+      "constraints_satisfied": true,
+      "task_completed_end_to_end": true,
+      "search_iterations": 1,
+      "retrieval_telemetry": {
+        "planned_operations": 12,
+        "cache_hits": 0,
+        "network_calls": 12,
+        "usable_results": 12,
+        "empty_results": 0,
+        "failed_operations": 0,
+        "tool_call_success_rate": 1.0
+      },
+      "books": [
+        {
+          "title": "Embodied Cognition",
+          "role": "Conceptual Foundation",
+          "goal_relevance": 1.0,
+          "fit_score": 0.916,
+          "verified_sources": [
+            "Google Books",
+            "Open Library"
+          ]
+        },
+        {
+          "title": "Autonomous Mobile Robots in Unknown Outdoor Environments",
+          "role": "Technical/Application",
+          "goal_relevance": 1.0,
+          "fit_score": 0.916,
+          "verified_sources": [
+            "Google Books",
+            "Open Library"
+          ]
+        },
+        {
+          "title": "Machine Ethics and Robot Ethics",
+          "role": "Critical/Cross-disciplinary",
+          "goal_relevance": 1.0,
+          "fit_score": 0.964,
+          "verified_sources": [
+            "Google Books",
+            "Open Library"
+          ]
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "id": "live-zh-embodied",
+      "language": "zh",
+      "latency_seconds": 18.328,
+      "data_mode": "mixed",
+      "constraints_satisfied": true,
+      "task_completed_end_to_end": true,
+      "search_iterations": 1,
+      "retrieval_telemetry": {
+        "planned_operations": 12,
+        "cache_hits": 0,
+        "network_calls": 12,
+        "usable_results": 6,
+        "empty_results": 6,
+        "failed_operations": 0,
+        "tool_call_success_rate": 0.5
+      },
+      "books": [
+        {
+          "title": "具身心智：认知科学和人类经验",
+          "role": "Conceptual Foundation",
+          "goal_relevance": 1.0,
+          "fit_score": 0.809,
+          "verified_sources": [
+            "Google Books"
+          ]
+        },
+        {
+          "title": "自主移动机器人",
+          "role": "Technical/Application",
+          "goal_relevance": 0.77,
+          "fit_score": 0.642,
+          "verified_sources": [
+            "机械工业出版社"
+          ]
+        },
+        {
+          "title": "机器人伦理学：机器人的伦理和社会影响",
+          "role": "Critical/Cross-disciplinary",
+          "goal_relevance": 1.0,
+          "fit_score": 0.876,
+          "verified_sources": [
+            "对外经济贸易大学图书馆"
+          ]
+        }
+      ],
+      "warnings": [
+        "为提高中文推荐质量，Atlas 已将实时结果与经过核验的缓存书目共同比较。"
+      ]
+    }
+  ],
+  "limitations": [
+    "This is a two-case integration smoke test, not a statistically powered quality study.",
+    "Token usage is reported directly from Bedrock; cost is not estimated because prices can change.",
+    "Tool-call success counts planned catalogue operations that returned at least one usable record; cache hits and network calls are reported separately.",
+    "Blind human ratings are still needed for a defensible semantic-quality claim."
+  ]
+}

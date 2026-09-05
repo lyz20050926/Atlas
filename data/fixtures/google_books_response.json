@@ -1,0 +1,24 @@
+{
+  "fixture_type": "synthetic_unit_test_only",
+  "items": [
+    {
+      "id": "test-volume-1",
+      "volumeInfo": {
+        "title": "Verified Systems",
+        "authors": ["Ada Example"],
+        "publishedDate": "2024-02-01",
+        "description": "A parser test record.",
+        "industryIdentifiers": [
+          {"type": "ISBN_10", "identifier": "123456789X"},
+          {"type": "ISBN_13", "identifier": "9781234567897"}
+        ],
+        "pageCount": 240,
+        "categories": ["Computers"],
+        "averageRating": 4.2,
+        "ratingsCount": 50,
+        "language": "en"
+      }
+    }
+  ]
+}
+

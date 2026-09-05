@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">NexMind</title>
+  <desc id="desc">Blue NexMind monogram with a four-point intelligence spark.</desc>
+  <defs>
+    <linearGradient id="nexmind-blue" x1="82" y1="408" x2="452" y2="112" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0754ae"/>
+      <stop offset="0.52" stop-color="#0b5ec4"/>
+      <stop offset="1" stop-color="#087ce7"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#nexmind-blue)" stroke-width="70" stroke-linejoin="round">
+    <path d="M92 414V116L324 366" stroke-linecap="round"/>
+    <path d="m270 246 116-108h72" stroke-linecap="square"/>
+    <path d="m270 246 118 120h70" stroke-linecap="square"/>
+  </g>
+  <path d="M356 220c4 17 14 27 31 31-17 4-27 14-31 31-4-17-14-27-31-31 17-4 27-14 31-31Z" fill="url(#nexmind-blue)"/>
+</svg>

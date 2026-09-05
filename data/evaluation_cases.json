@@ -1,0 +1,15 @@
+[
+  {"id":"embodied-eee","topic":"Embodied Intelligence","major":"EEE","background":["Python","Machine Learning","Control theory"],"perspectives":["Robotics","Cognitive Science","Ethics"],"weeks":6,"hours":4},
+  {"id":"embodied-humanities","topic":"Embodied Intelligence","major":"Philosophy","background":["Philosophy of mind","Ethics"],"perspectives":["Cognitive Science","Robotics","Ethics"],"weeks":8,"hours":3},
+  {"id":"embodied-beginner","topic":"Embodied Intelligence","major":"Business","background":[],"perspectives":["Robotics","Cognitive Science","Ethics"],"weeks":6,"hours":3},
+  {"id":"embodied-cs","topic":"Embodied Intelligence","major":"Computer Science","background":["Python","Deep Learning"],"perspectives":["Robotics","Cognitive Science","Ethics"],"weeks":4,"hours":5},
+  {"id":"robotics-me","topic":"Autonomous Robotics","major":"Mechanical Engineering","background":["Dynamics","Control theory"],"perspectives":["Robotics","Cognitive Science","Ethics"],"weeks":6,"hours":4},
+  {"id":"robotics-design","topic":"Autonomous Robotics","major":"Industrial Design","background":["Product design"],"perspectives":["Robotics","Design","Ethics"],"weeks":8,"hours":2.5},
+  {"id":"robotics-cs","topic":"Autonomous Robotics","major":"Computer Science","background":["Python","Machine Learning"],"perspectives":["Robotics","Cognitive Science","Ethics"],"weeks":5,"hours":4},
+  {"id":"robotics-novice","topic":"Autonomous Robotics","major":"Economics","background":[],"perspectives":["Robotics","Ethics","Design"],"weeks":10,"hours":2},
+  {"id":"ethics-law","topic":"Human-Robot Ethics","major":"Law","background":["Technology policy"],"perspectives":["Ethics","Robotics","Cognitive Science"],"weeks":6,"hours":3},
+  {"id":"ethics-eee","topic":"Human-Robot Ethics","major":"EEE","background":["Robotics","Control theory"],"perspectives":["Ethics","Robotics","Design"],"weeks":4,"hours":4},
+  {"id":"ethics-psych","topic":"Human-Robot Ethics","major":"Psychology","background":["Cognitive psychology"],"perspectives":["Cognitive Science","Ethics","Robotics"],"weeks":8,"hours":2},
+  {"id":"ethics-beginner","topic":"Human-Robot Ethics","major":"Biology","background":[],"perspectives":["Ethics","Robotics","Cognitive Science"],"weeks":6,"hours":2.5}
+]
+

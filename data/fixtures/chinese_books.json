@@ -1,0 +1,83 @@
+{
+  "snapshot_note": "Cached Chinese bibliographic metadata verified from linked publisher, library, and Google Books pages on 2026-08-30.",
+  "books": [
+    {
+      "canonical_id": "9787308072656",
+      "title": "具身心智：认知科学和人类经验",
+      "authors": ["F. 瓦雷拉", "E. 汤普森", "E. 罗施"],
+      "isbn_10": "7308072657",
+      "isbn_13": "9787308072656",
+      "published_year": 2010,
+      "description": "从认知科学与人类经验出发讨论具身心智、涌现和行动生成认知。",
+      "language": "zh",
+      "page_count": 316,
+      "categories": ["具身认知", "认知科学", "心灵哲学"],
+      "average_rating": null,
+      "ratings_count": null,
+      "source_records": [
+        {
+          "source_name": "Google Books",
+          "source_url": "https://books.google.com/books/about/%E5%85%B7%E8%BA%AB%E5%BF%83%E6%99%BA.html?id=KA9xngEACAAJ",
+          "source_book_id": "KA9xngEACAAJ",
+          "retrieved_at": "2026-08-30T00:00:00Z",
+          "fields_verified": ["title", "authors", "isbn_10", "isbn_13", "published_year", "page_count", "language"],
+          "conflicts": []
+        }
+      ],
+      "verification_status": "verified_single_source",
+      "search_roles": ["Conceptual Foundation"]
+    },
+    {
+      "canonical_id": "9787111676690",
+      "title": "自主移动机器人",
+      "authors": ["熊蓉", "王越", "张宇", "周春琳"],
+      "isbn_10": null,
+      "isbn_13": "9787111676690",
+      "published_year": 2021,
+      "description": "介绍自主移动机器人的运动学、导航规划、定位建图与多传感器融合。",
+      "language": "zh",
+      "page_count": 255,
+      "categories": ["机器人学", "自主移动机器人", "SLAM"],
+      "average_rating": null,
+      "ratings_count": null,
+      "source_records": [
+        {
+          "source_name": "机械工业出版社",
+          "source_url": "https://www.cmpedu.com/books/book/5604476.htm",
+          "source_book_id": "5604476",
+          "retrieved_at": "2026-08-30T00:00:00Z",
+          "fields_verified": ["title", "authors", "isbn_13", "published_year", "description", "language"],
+          "conflicts": []
+        }
+      ],
+      "verification_status": "verified_single_source",
+      "search_roles": ["Technical/Application"]
+    },
+    {
+      "canonical_id": "9787115561749",
+      "title": "机器人伦理学：机器人的伦理和社会影响",
+      "authors": ["帕特里克·林", "凯斯·阿布尼", "乔治·A. 贝基"],
+      "isbn_10": null,
+      "isbn_13": "9787115561749",
+      "published_year": 2021,
+      "description": "讨论机器人道德程序设计、责任、隐私、权利、法律政策及社会影响。",
+      "language": "zh",
+      "page_count": 384,
+      "categories": ["机器人伦理", "技术伦理", "人工智能治理"],
+      "average_rating": null,
+      "ratings_count": null,
+      "source_records": [
+        {
+          "source_name": "对外经济贸易大学图书馆",
+          "source_url": "https://opac.uibe.edu.cn/opac/book/418fd855a69bd4b319ae017e6c0141cc",
+          "source_book_id": "418fd855a69bd4b319ae017e6c0141cc",
+          "retrieved_at": "2026-08-30T00:00:00Z",
+          "fields_verified": ["title", "authors", "isbn_13", "published_year", "page_count", "description", "language"],
+          "conflicts": []
+        }
+      ],
+      "verification_status": "verified_single_source",
+      "search_roles": ["Critical/Cross-disciplinary"]
+    }
+  ]
+}

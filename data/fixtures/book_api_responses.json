@@ -1,0 +1,55 @@
+{
+  "snapshot_note": "Cached demo metadata captured from Open Library search responses on 2026-08-30. Google examples are synthetic parser fixtures and are never loaded by the demo fallback.",
+  "google_books": {},
+  "open_library": {
+    "Conceptual Foundation": {
+      "docs": [
+        {
+          "key": "/works/OL20344193W",
+          "title": "The Routledge Handbook of Embodied Cognition",
+          "author_name": ["Lawrence Shapiro"],
+          "isbn": ["0415623618", "9780415623612"],
+          "first_publish_year": 2014,
+          "number_of_pages_median": 409,
+          "ratings_average": 4.0,
+          "ratings_count": 1,
+          "language": ["eng"],
+          "subject": ["Embodied cognition", "Cognitive science"]
+        }
+      ]
+    },
+    "Technical/Application": {
+      "docs": [
+        {
+          "key": "/works/OL17832738W",
+          "title": "Introduction to Autonomous Mobile Robots",
+          "author_name": ["Roland Siegwart"],
+          "isbn": ["026219502X", "9780262195027"],
+          "first_publish_year": 2004,
+          "number_of_pages_median": 404,
+          "ratings_average": null,
+          "ratings_count": null,
+          "language": ["eng"],
+          "subject": ["Autonomous robots", "Mobile robots", "Robotics"]
+        }
+      ]
+    },
+    "Critical/Cross-disciplinary": {
+      "docs": [
+        {
+          "key": "/works/OL16597029W",
+          "title": "Robot Ethics",
+          "author_name": ["Patrick Lin", "Keith Abney", "George A. Bekey"],
+          "isbn": ["0262016664", "9780262016667"],
+          "first_publish_year": 2011,
+          "number_of_pages_median": 400,
+          "ratings_average": null,
+          "ratings_count": null,
+          "language": ["eng"],
+          "subject": ["Robotics", "Moral and ethical aspects", "Technology and ethics"]
+        }
+      ]
+    }
+  }
+}
+

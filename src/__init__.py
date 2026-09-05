@@ -1,0 +1,2 @@
+"""NexMind Atlas application package."""
+
