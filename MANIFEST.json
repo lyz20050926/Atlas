@@ -1,8 +1,8 @@
 {
   "format": 1,
   "project": "NexMind Atlas",
-  "generated_at": "2026-09-05T10:10:34.397124+00:00",
-  "source_sha256": "937e2693ed965e2f8c259d4d59d6ac3bd00dbae2844442cec2a032d5a529f049",
+  "generated_at": "2026-09-05T12:22:19.877817+00:00",
+  "source_sha256": "0dc97aabdbff6727f79cfb9dacee85b0eb90026312a6df89862017f47179177e",
   "scope": "Code project only. Presentation deck and video are separate deliverables.",
   "files": {
     ".env.example": {
@@ -18,8 +18,8 @@
       "sha256": "fcc4a3cab3784d116e317bce0213039917341e13c4dc7b6f29aa5f0bd69094a2"
     },
     "README.md": {
-      "bytes": 10023,
-      "sha256": "9d4fcf56b1f9d8b8ddd41ef23787f44859459e5fc0cf0a44ca6c0b3caa25d5cf"
+      "bytes": 10212,
+      "sha256": "31145fd4a3497c871aaebfdcbfb002ff641a047697f056634775182b59504fae"
     },
     "app.py": {
       "bytes": 182070,
@@ -81,6 +81,10 @@
       "bytes": 4137,
       "sha256": "212f32914b056786844813a79a183e717e4bbf8a20bbb4adcad6c7073a8c392f"
     },
+    "docs/final_acceptance_fixes_2026-09-05.md": {
+      "bytes": 3432,
+      "sha256": "66f5c94e820ed85f4bb9a2fdd152fe9e0ddd70d19fd66c3473bf8fa7a5483e9f"
+    },
     "docs/hackathon_readiness.md": {
       "bytes": 3888,
       "sha256": "4e3377721dad0ee20bb478ebc8eaf72cb735f023dea8275f17085d0a33cbaeb0"
@@ -98,16 +102,16 @@
       "sha256": "3fb32e1509f545648da7ed84d76fa309060c09d3227cd3f89f8e7e69992b9709"
     },
     "evaluation_results/latest.json": {
-      "bytes": 8520,
-      "sha256": "aff722ff35f4652afe8f267ddafc70f4abeb468d0ceb8aa0825de26b897ab204"
+      "bytes": 8842,
+      "sha256": "7bae75a0413cd5426ee9183ba4bd67d2d020da438ba9fc9f1a3c8faa92f40391"
     },
     "evaluation_results/live_latest.json": {
       "bytes": 4631,
       "sha256": "979a802324c7208ce8a543bed78690e68e6e9d6983ef2eb2bdf19d8071a3adfd"
     },
     "evaluation_results/preflight_latest.json": {
-      "bytes": 2889,
-      "sha256": "d55d2729ede0a4b613700667685183be69c005370d603a42f15fe4f1769f1fb1"
+      "bytes": 2986,
+      "sha256": "9f311f2c8dc32b76b8f7816c209008432ec54c47faae28a7365e9cf48f77ee5a"
     },
     "launch.py": {
       "bytes": 10358,
@@ -198,8 +202,8 @@
       "sha256": "316e9e247cab99355d4364e3952cf8a00a68c2fc3c818404888888715c9d409a"
     },
     "src/learning_review.py": {
-      "bytes": 40055,
-      "sha256": "eb3b3f32ff08b58f24d9f50e18138d4a03039e5459012217bee1d23262ff110b"
+      "bytes": 42873,
+      "sha256": "fcf899ba091844a073e9bf6b0509e0259a325c2955c8795cd3607d94c282c6d7"
     },
     "src/llm/__init__.py": {
       "bytes": 34,
@@ -222,8 +226,8 @@
       "sha256": "fbcaa095bd5b38faef8540a891091328d335a7dd0fadcb1e028deb283961b9f9"
     },
     "src/mentor.py": {
-      "bytes": 26530,
-      "sha256": "9bd7fcc6b1ac81f3e2602961bf1f1dbec18c8f573bbd76869b9decef7f2832dc"
+      "bytes": 26901,
+      "sha256": "1d93a5a4baff011e8156d533bb7c67ddbab716c7f9169b9d1e75e68f6adb2f6b"
     },
     "src/models.py": {
       "bytes": 10622,
@@ -262,8 +266,8 @@
       "sha256": "534dbe6a0b4a7ca88c00e55c03c5f178cfaa485f03a050389c635cad825ea0fd"
     },
     "src/services/goal_alignment.py": {
-      "bytes": 7943,
-      "sha256": "c9ff46c94cb6690596dc064cb2936e9ccd40543dbce40349834d60db183dd08a"
+      "bytes": 12137,
+      "sha256": "5077afd145b107af0ba6d841716d100f144dc00fe2d7c1df100a070bb790ce4c"
     },
     "src/services/learning_focus.py": {
       "bytes": 3747,
@@ -369,6 +373,10 @@
       "bytes": 646,
       "sha256": "96223898339f38ea92fcc546b14de2e546d9f147055504e07c12a35a293ed0fa"
     },
+    "tests/unit/test_final_acceptance_regressions.py": {
+      "bytes": 5473,
+      "sha256": "150e6aa1dff9b7f33b8cbabd26e82f5364c57396e9384c93353271bc6ca9e89e"
+    },
     "tests/unit/test_goal_alignment.py": {
       "bytes": 3492,
       "sha256": "502f5b29366d0bdf78cb5e4644c23746e1aabc1ee592be6cc3cdb33c7f380114"
@@ -406,8 +414,8 @@
       "sha256": "22889a53655bd265e301dc1b8078c2254ed2925195344f05f7c17b8c3a496d96"
     },
     "tests/unit/test_mixed_diagnostic.py": {
-      "bytes": 19634,
-      "sha256": "da498b4fa4a382f54da472f88bdb3d5e55be9100b23c8b31d7ca2d72bff68081"
+      "bytes": 20714,
+      "sha256": "3617a914e2a5a4fdc3e05f051f6375e93b01127c9d303b2a2055bdb7de2d201c"
     },
     "tests/unit/test_models.py": {
       "bytes": 869,

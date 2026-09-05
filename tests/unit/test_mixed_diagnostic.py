@@ -115,6 +115,21 @@ def test_model_returns_three_formats_and_editor_preserves_answer_keys(context, l
     assert provider.calls[0][1]["book"]["title"] == book.title
 
 
+def test_independent_auditor_english_explanation_is_repaired_before_display(context):
+    class MixedLanguageWriter(Writer):
+        def generate_structured(self, system, user, output_model):
+            if output_model.__name__ == "LocalizedQuestionText":
+                return output_model(texts=["观察研究只支持关联，不能单独确定因果方向。"])
+            value = super().generate_structured(system, user, output_model)
+            if "single_choice_answer" in output_model.model_fields:
+                value.single_choice_explanation = "An association does not establish the direction of causation."
+            return value
+    questions = generate_questions(*context, provider=MixedLanguageWriter())
+    assert questions[0].generation_source == "model"
+    assert questions[0].explanation == "观察研究只支持关联，不能单独确定因果方向。"
+    assert questions[0].correct_answer == questions[0].options[1]
+
+
 @pytest.mark.parametrize("defect", ["duplicate_option", "invalid_key", "no_rationale", "duplicate_prompt", "empty_prompt"])
 def test_malformed_provider_returns_honestly_labeled_local_set(context, defect):
     payload = draft_payload()
@@ -287,6 +302,8 @@ def test_regularization_accuracy_guarantee_cannot_pass_a_true_key(context, promp
     ("增大L2正则化强度，训练准确率不一定下降。", True),
 ])
 def test_regularization_guard_preserves_correctly_scoped_judgments(context, prompt, key):
+    if prompt.startswith("Increasing"):
+        context[0].interface_language = "en"
     payload = draft_payload()
     payload.update(prompt_2=prompt, correct_answer_2=key)
     provider = Writer(payload)
@@ -296,6 +313,7 @@ def test_regularization_guard_preserves_correctly_scoped_judgments(context, prom
 
 
 def test_cv_guard_does_not_reject_best_supported_conclusion_questions(context):
+    context[0].interface_language = "en"
     payload = draft_payload()
     payload["prompt_1"] = "K-fold results vary substantially across folds. Which conclusion is best supported by this observation?"
     provider = Writer(payload)

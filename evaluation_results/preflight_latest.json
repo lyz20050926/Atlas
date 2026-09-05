@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-05T10:09:55.530032+00:00",
+  "generated_at": "2026-09-05T11:13:39.402973+00:00",
   "passed": true,
-  "source_sha256": "937e2693ed965e2f8c259d4d59d6ac3bd00dbae2844442cec2a032d5a529f049",
+  "source_sha256": "0dc97aabdbff6727f79cfb9dacee85b0eb90026312a6df89862017f47179177e",
   "source_unchanged_during_checks": true,
   "checks": [
     {
@@ -39,7 +39,7 @@
         "-q"
       ],
       "return_code": 0,
-      "output_tail": "........................................................................ [ 19%]\n........................................................................ [ 39%]\n........................................................................ [ 58%]\n........................................................................ [ 78%]\n........................................................................ [ 98%]\n.......                                                                  [100%]\n"
+      "output_tail": "........................................................................ [ 18%]\n........................................................................ [ 37%]\n........................................................................ [ 55%]\n........................................................................ [ 74%]\n........................................................................ [ 93%]\n...........................                                              [100%]\n"
     },
     {
       "name": "compileall",
@@ -85,7 +85,7 @@
         "scripts.run_evaluation"
       ],
       "return_code": 0,
-      "output_tail": "{\n  \"book_identity_verification_rate\": 1.0,\n  \"hard_constraint_satisfaction_rate\": 1.0,\n  \"structured_output_pass_rate\": 1.0,\n  \"replanning_success_rate\": 1.0,\n  \"source_attribution_correctness_proxy\": 1.0,\n  \"loop_termination_within_cap\": 1.0,\n  \"semantic_relevance_gate_pass_rate\": 1.0,\n  \"average_transparent_fit_score\": 0.8437,\n  \"average_latency_seconds\": 0.0324,\n  \"model_calls_per_task\": 0,\n  \"estimated_model_cost_usd_per_task\": 0.0\n}\nsaved=./evaluation_results/latest.json\n"
+      "output_tail": "{\n  \"book_identity_verification_rate\": 1.0,\n  \"hard_constraint_satisfaction_rate\": 1.0,\n  \"structured_output_pass_rate\": 1.0,\n  \"replanning_success_rate\": 1.0,\n  \"source_attribution_correctness_proxy\": 1.0,\n  \"loop_termination_within_cap\": 1.0,\n  \"semantic_relevance_gate_pass_rate\": 1.0,\n  \"average_transparent_fit_score\": 0.8437,\n  \"average_latency_seconds\": 0.0107,\n  \"model_calls_per_task\": 0,\n  \"estimated_model_cost_usd_per_task\": 0.0\n}\nsaved=.\\evaluation_results\\latest.json\n"
     }
   ],
   "notes": [

@@ -75,6 +75,8 @@ Demo uses `data/demo.db`; live mode defaults to `data/nexmind_atlas.db`, or the 
 
 ## Verify the delivered source
 
+The [final acceptance fix notes](docs/final_acceptance_fixes_2026-09-05.md) describe the bilingual regression fixes, fresh live checks and remaining catalogue limitations in this release.
+
 Install the separate locked test/development dependencies before running checks (`uv sync --frozen` already includes them):
 
 ```bash

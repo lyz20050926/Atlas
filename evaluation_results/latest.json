@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T10:09:55.454172+00:00",
+  "generated_at": "2026-09-05T11:13:39.345262+00:00",
   "mode": "cached Open Library snapshot; deterministic pipeline; no live API or LLM calls",
   "case_count": 12,
   "metrics": {
@@ -11,7 +11,7 @@
     "loop_termination_within_cap": 1.0,
     "semantic_relevance_gate_pass_rate": 1.0,
     "average_transparent_fit_score": 0.8437,
-    "average_latency_seconds": 0.0324,
+    "average_latency_seconds": 0.0107,
     "model_calls_per_task": 0,
     "estimated_model_cost_usd_per_task": 0.0
   },

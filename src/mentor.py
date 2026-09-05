@@ -84,6 +84,10 @@ def _fallback_response(
         r"(?:我(?:已经|已)?(?:读|看)(?:了|到)?|(?:阅读|读书|当前)进度(?:是|为|到|到了)?)[^。！？?!,，;%]{0,18}?(\d{1,3})\s*%",
         r"\bi(?:'m| am)\s+(\d{1,3})\s*%\s+(?:through|into|done with)\b",
         r"\bi(?: have|'ve)?\s+(?:read|finished|completed)\s+(\d{1,3})\s*%",
+        # A coordinated first-person report can share its subject: "I have
+        # two hours this week and have read 30%". Require the present-perfect
+        # reading assertion; a percentage elsewhere in the clause is not enough.
+        r"\bi(?: have|'ve)\b[^.!?\n;\"“”]{0,100}?\b(?:and|but)\s+have\s+(?:already\s+)?(?:read|finished|completed)\s+(\d{1,3})\s*%",
         r"\b(?:reading progress|my progress)\s*(?:is|at|to)?\s*(\d{1,3})\s*%",
     )
     percent_match = next((match for pattern in percent_patterns if (match := re.search(pattern, message, re.I))), None)
