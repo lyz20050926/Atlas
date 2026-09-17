@@ -1,12 +1,37 @@
-# NexMind Atlas
+<p align="center">
+  <img src="./assets/atlas-mark.svg" width="72" alt="Atlas" />
+</p>
 
-**Atlas helps a learner choose books, work through difficult ideas and adjust a reading plan as they learn.** NexMind is the project brand; the agent is called Atlas.
+<h1 align="center">Atlas</h1>
 
-This is a bilingual, locally runnable hackathon proof of concept. Its bounded LangGraph workflow combines catalogue retrieval, book-identity checks, suitability assessment, learner feedback and explicit plan changes. It is not an unrestricted autonomous research agent or a production multi-user service.
+<p align="center">
+  An agentic reading companion that builds personalized learning paths,<br>
+  verifies book information, supports active study, and adapts from learner feedback.
+</p>
 
-## Start here: no AWS required
+<p align="center">
+  <sub>Python · LangGraph · Streamlit · AWS Bedrock · SQLite</sub>
+</p>
 
-Prerequisites: **Python 3.11 or newer**, a modern browser, and internet access for the initial dependency installation. Open a terminal in the extracted project directory. No developer credentials, saved profile or database is needed.
+---
+
+## What Atlas does
+
+Most reading tools stop at a recommendation. Atlas keeps the learning loop going.
+
+**Understand your goals → Find & verify books → Read & practise → Review & adapt**
+
+- **Personalized paths** — builds a staged reading route from a learner's topic, background, outcome, time and constraints.
+- **Book verification** — checks catalogue identity and keeps source information visible instead of silently substituting titles.
+- **Interactive learning** — supports book-specific questions, study coaching and mixed-format knowledge checks.
+- **Adaptive planning** — preserves progress while allowing time changes, book replacements and versioned plan updates.
+- **Bilingual workflow** — supports English and Chinese interfaces with language-specific saved work.
+
+Atlas was built by **NexMind** as a hackathon proof of concept. It is a bounded agent workflow, not an unrestricted autonomous research agent or a production multi-user service.
+
+## Quick start
+
+Prerequisites: **Python 3.11+**, a modern browser, and internet access for the initial dependency installation.
 
 ### Windows PowerShell
 
@@ -24,60 +49,82 @@ python3 -m venv .venv
 .venv/bin/python launch.py
 ```
 
-Open the local URL printed by the launcher (normally `http://localhost:8501`). **The default is demo mode**, using bundled catalogue examples and local, non-LLM behaviour. It does not require AWS. Demo answers must not be presented as live Bedrock output or as evidence of model quality. External book images/source links may still need internet access.
+Open the local URL printed by the launcher, normally `http://localhost:8501`.
 
-The launcher does not install packages, rewrite `.env` or overwrite an existing learning profile. Stop it with **Ctrl+C**. If the default port is occupied, add `--port 8502`. Use `--no-browser` to suppress automatic browser opening, or `--check` to validate prerequisites without starting the server.
+The default is **demo mode**: it uses bundled catalogue examples and local, non-LLM behaviour, so no AWS credentials are required. External book images and source links may still require internet access.
 
-After installation, the convenience wrappers are `powershell -File start.ps1` on Windows and `sh start.sh` on macOS/Linux/WSL. They prefer the project virtual environment. For an existing uv installation, `uv sync --frozen` followed by `uv run python launch.py` is an alternative using `uv.lock`.
+The launcher does not install packages, rewrite `.env`, or overwrite an existing learning profile. Stop it with **Ctrl+C**. Use `--port 8502` if the default port is occupied, `--no-browser` to suppress automatic browser opening, or `--check` to validate prerequisites without starting the app.
 
-## What to try
+Convenience wrappers are available as `powershell -File start.ps1` on Windows and `sh start.sh` on macOS/Linux/WSL. If `uv` is already installed, `uv sync --frozen` followed by `uv run python launch.py` is also supported.
 
-| Step | Action | What to check |
-| --- | --- | --- |
-| 1. Set a direction | Create a learning profile. Enter your topic, background, intended outcome and optional **detailed interests and requirements** in free text. | Specific subfields and exclusions can be recorded; another profile's progress is not overwritten. |
-| 2. Inspect the route | Generate a reading path and open each stage. | Books, catalogue identity, source links, reasons, time estimates and any unmet requirements are visible. Sample data is labelled. |
-| 3. Check a book | Use the title/ISBN search after creating a route. | Atlas assesses an identified book; a missing or unrelated match should not be silently substituted. Demo lookup is limited to bundled examples. |
-| 4. Read and ask | Open a book's conversation, then the learning tools. | Book-specific discussion is distinct from whole-path study coaching. Live mode is needed to evaluate open-ended model answers. |
-| 5. Practise | Generate a knowledge check, answer a single-choice item, a true/false item and a short question. | Choices are not preselected. Unanswered items are not scored as mistakes. Objective answers can be checked locally; semantic short-answer review needs the live model. |
-| 6. Follow through | Record progress or complete a reading session; inspect the follow-up. | Saved progress, a question/practice invitation and the next stage stay tied to the current book and plan. |
-| 7. Adapt and return | Change available time or request a book replacement; inspect **History**. | A plan change creates a version; historical plans and saved progress remain available. |
-| 8. Check both languages | Switch the interface in **Settings** and repeat with a separate profile. | Interface language, book-language preference and language-specific saved work remain distinct. |
+## Demo flow
 
-For the quickest demo, click **Use example learning goals / 填入演示学习需求**, then generate the path. The example uses **Embodied intelligence / 具身智能**, an electrical-engineering background with Python and basic machine learning, six weeks and four hours per week. You can edit it before submitting. Bundled examples cover a limited set of topics, not every specialised request.
+For the quickest walkthrough, choose **Use example learning goals / 填入演示学习需求** and generate a path. The bundled example uses embodied intelligence, an electrical-engineering background with Python and basic machine learning, six weeks, and four hours per week.
+
+A useful end-to-end flow is:
+
+1. **Set a direction** — create a learning profile with topic, background, target outcome, time and optional requirements.
+2. **Inspect the route** — generate a reading path and review books, source links, reasons and time estimates.
+3. **Check a book** — search by title or ISBN and inspect Atlas's suitability assessment.
+4. **Read and ask** — use book-specific discussion and learning tools.
+5. **Practise** — generate single-choice, true/false and short-answer knowledge checks.
+6. **Record progress** — save reading progress and continue from the current book and plan.
+7. **Adapt** — change available time or replace a book while keeping historical plan versions.
+8. **Switch languages** — repeat with a separate English or Chinese profile.
+
+Bundled demo data covers a limited set of topics and should not be treated as evidence of live-model quality.
 
 ## Live catalogue and model mode
 
-Use this only with your own authorised service access. Requests can incur model charges and send relevant goals, background, questions and excerpts to the configured provider.
+Live mode uses your own authorised service access. Requests can incur model charges and send relevant goals, background, questions and excerpts to the configured provider.
 
-1. Copy `.env.example` to `.env` **only if `.env` does not already exist**. Do not send or commit this file.
-2. Set `LLM_PROVIDER=bedrock`, `AWS_REGION` and a permitted `BEDROCK_MODEL_ID`. Set `BEDROCK_LEARNING_MODEL_ID` if using a separate tutoring model; otherwise it uses the main model.
-3. Supply AWS credentials through the standard environment or a local AWS profile; set `AWS_PROFILE` only when using that profile. The project does not provide credentials or model access. Refresh expired credentials through your own provider workflow.
-4. Optionally set a Google Books API key restricted to that service in `GOOGLE_BOOKS_API_KEY`; shared unauthenticated quota may be unavailable.
-5. Run the same virtual-environment Python with:
+1. Copy `.env.example` to `.env` **only if `.env` does not already exist**. Do not commit this file.
+2. Set `LLM_PROVIDER=bedrock`, `AWS_REGION` and a permitted `BEDROCK_MODEL_ID`.
+3. Optionally set `BEDROCK_LEARNING_MODEL_ID` for a separate tutoring model.
+4. Supply AWS credentials through the standard environment or a local AWS profile.
+5. Optionally set a Google Books API key in `GOOGLE_BOOKS_API_KEY`.
+6. Launch with:
 
 ```bash
 python launch.py --mode live
 ```
 
-Here and in the commands below, `python` means the interpreter from the virtual environment created above. Live mode requires access to the configured external services; a launch configuration check is not proof that a model invocation will succeed.
+Demo mode uses `data/demo.db`. Live mode defaults to `data/nexmind_atlas.db`, or the path configured through `DATABASE_PATH`.
 
-Demo uses `data/demo.db`; live mode defaults to `data/nexmind_atlas.db`, or the explicitly configured `DATABASE_PATH`. These are local runtime files, not files supplied in the submission archive. Save personal data only on a trusted machine. See `.env.example` for timeout, retry, search-cap and cache settings.
+## Architecture
+
+Atlas uses a bounded LangGraph workflow rather than open-ended autonomous reflection. The recommendation pipeline has explicit planning, retrieval, validation, selection and adaptation stages, with at most three search passes.
+
+```text
+Learner profile
+      ↓
+Goal + constraints
+      ↓
+Catalogue retrieval → identity checks → suitability assessment
+      ↓
+Personalized reading path
+      ↓
+Reading + questions + practice
+      ↓
+Progress and feedback
+      └──────────────→ plan update / replacement / next step
+```
+
+The stack is **Python, Streamlit, LangGraph, Pydantic, httpx, boto3 / Amazon Bedrock and SQLite**. Exact runtime versions are pinned in `requirements.txt` and `uv.lock`; `requirements-dev.txt` contains test and lint dependencies.
 
 ## Behaviour and limits
 
-- **Controlled agent workflow:** fixed planning/retrieval/validation/selection nodes, with at most three search passes. Limited cache supplementation is not open-ended model reflection. Book replacement and plan changes require an explicit learner action.
-- **Sources are not full-book access:** catalogue identity and descriptions do not establish complete chapter coverage or perfect relevance. Atlas uses short supplied excerpts for passage-specific help; it does not scrape full books or bypass paywalls.
-- **Practice remains fallible:** live questions undergo editorial and independent-answer checks with bounded repair. When these fail, Atlas labels general foundational exercises as a fallback. A correct selection score only confirms agreement with the stored answer key; it does not prove that the key is correct.
-- **Model failure is visible:** local actions and objective checking can continue, but unavailable semantic review must not masquerade as genuine model assessment. Highly specialised or Chinese-language question generation can be slow or fall back; the dated QA notes describe observed failures.
-- **Local prototype, not authenticated hosting:** a learning-profile ID is not a login or security boundary. Do not expose private profiles on a public server. There is no production authentication, backup service or uptime guarantee.
-- **Reminder boundary:** checks and session follow-ups work in the app; closing the app does not leave an always-on agent sending email or operating-system reminders.
-- **No validated learning-gain claim:** deterministic tests and small live samples are not an external educational-effectiveness study. Provider-specific privacy terms apply to live model inputs.
+- **Controlled agent workflow:** planning, retrieval, validation and selection are bounded; plan changes require an explicit learner action.
+- **Catalogue sources are not full-book access:** descriptions and metadata do not establish complete chapter coverage or perfect relevance.
+- **Practice can be fallible:** objective questions can be checked locally, while semantic short-answer review requires the live model.
+- **Model failure stays visible:** unavailable semantic review is not presented as genuine model assessment.
+- **Local prototype:** a learning-profile ID is not a login or security boundary; do not expose private profiles on a public server.
+- **No background reminder service:** session follow-ups work inside the app; closing the app does not leave an always-on agent running.
+- **No validated learning-gain claim:** deterministic tests and small live samples are engineering checks, not an external educational-effectiveness study.
 
-## Verify the delivered source
+## Verification
 
-The [final acceptance fix notes](docs/final_acceptance_fixes_2026-09-05.md) describe the bilingual regression fixes, fresh live checks and remaining catalogue limitations in this release.
-
-Install the separate locked test/development dependencies before running checks (`uv sync --frozen` already includes them):
+Install development dependencies before running the checks below (`uv sync --frozen` already includes them):
 
 ```bash
 python -m pip install -r requirements-dev.txt
@@ -87,30 +134,28 @@ python -m ruff check .
 python -m scripts.preflight
 ```
 
-The local preflight checks lint, tests, compilation, selected secret patterns and deterministic evaluation without calling Bedrock. It produces `evaluation_results/preflight_latest.json`. Read its timestamp and individual outcomes; do not substitute an older green report for a final-source run.
+The local preflight checks lint, tests, compilation, selected secret patterns and deterministic evaluation without calling Bedrock. Results are written to `evaluation_results/preflight_latest.json`.
 
-The optional **billable** integration check is separate:
+An optional billable live integration check is available separately:
 
 ```bash
 python -m scripts.run_live_evaluation --confirm-live-cost
 ```
 
-`evaluation_results/latest.json` contains fixture-based deterministic results. `live_latest.json`, if included, is a **dated historical sample**, not a fresh result for the final archive. It does not imply human-validated relevance. Broader external-review guidance is in `docs/human_evaluation_protocol.md`.
+`evaluation_results/latest.json` contains fixture-based deterministic results. `live_latest.json`, when present, is a dated historical sample rather than proof of current model quality. Broader external-review guidance is documented in `docs/human_evaluation_protocol.md`.
 
 ## Project map
 
 | Path | Purpose |
 | --- | --- |
-| `launch.py`, `start.ps1`, `start.sh` | Cross-platform demo/live launch and local checks. |
-| `app.py`, `src/ui.py`, `src/hero_book.py`, `src/quiz_ui.py` | Bilingual application and interface components. |
-| `src/graph.py`, `src/services/` | Bounded recommendation pipeline, matching, suitability and plan construction. |
-| `src/learning_review.py`, `src/diagnostic.py` | Mixed practice, model review and labelled local fallback. |
-| `src/tools/`, `src/llm/` | Catalogue clients and structured model-provider interfaces. |
-| `src/database.py` | Local profiles, plans, progress, conversations and cache. |
-| `data/*.json`, `data/fixtures/` | Demonstration/evaluation inputs and documented catalogue examples. |
-| `tests/`, `scripts/`, `evaluation_results/` | Reproducible checks, evaluation entry points and dated reports. |
-| `docs/SUBMISSION_GUIDE.md`, `docs/architecture.md` | Handoff checklist, review route and implementation boundaries. |
+| `launch.py`, `start.ps1`, `start.sh` | Cross-platform demo/live launch and local checks |
+| `app.py`, `src/ui.py`, `src/hero_book.py`, `src/quiz_ui.py` | Bilingual application and interface components |
+| `src/graph.py`, `src/services/` | Recommendation pipeline, matching, suitability and plan construction |
+| `src/learning_review.py`, `src/diagnostic.py` | Practice, model review and labelled local fallback |
+| `src/tools/`, `src/llm/` | Catalogue clients and structured model-provider interfaces |
+| `src/database.py` | Local profiles, plans, progress, conversations and cache |
+| `data/*.json`, `data/fixtures/` | Demonstration and evaluation inputs |
+| `tests/`, `scripts/`, `evaluation_results/` | Reproducible checks and evaluation outputs |
+| `docs/` | Architecture, handoff, QA and evaluation notes |
 
-The stack is Python, Streamlit, LangGraph, Pydantic, httpx, boto3/Bedrock and SQLite. Exact runtime installation versions are supplied in `requirements.txt` and `uv.lock`; `requirements-dev.txt` adds the pinned test/lint tools.
-
-The code package is separate from the slide deck and video. Their starting materials are `docs/deck_outline.md` and `docs/demo_script.md`; a script or outline is not a completed presentation deliverable.
+The final acceptance notes are in [`docs/final_acceptance_fixes_2026-09-05.md`](docs/final_acceptance_fixes_2026-09-05.md). The code package is separate from the slide deck and demo video; their starting materials are `docs/deck_outline.md` and `docs/demo_script.md`.
